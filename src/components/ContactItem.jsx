@@ -1,9 +1,18 @@
-const ContactItem = ({ name, number }) => {
+import PropTypes from 'prop-types';
+
+const ContactItem = ({ id, name, number, onClick }) => {
     return (
         <>
-            <li>{name}: {number}</li>
+            <li>{name}: {number} <button type='button' onClick={()=> onClick(id)}>Delite</button></li>
         </>
     );
 }; 
+
+ContactItem.propTypes = {
+    id: PropTypes.string.isRequired,
+    name: PropTypes.string.isRequired,
+    number: PropTypes.string.isRequired,
+    onClick: PropTypes.func.isRequired,
+}
 
 export default ContactItem;
