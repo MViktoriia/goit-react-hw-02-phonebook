@@ -1,18 +1,10 @@
-import Phonebook from './Phonebook' 
+import Phonebook from './Phonebook'; 
+import { Wrapper } from './App.styled';
 
 export const App = () => {
   return (
-    <div
-      style={{
-        height: '100vh',
-        // display: 'flex',
-        // justifyContent: 'center',
-        // alignItems: 'center',
-        // fontSize: 40,
-        color: '#010101'
-      }}
-    >
+    <Wrapper>
       <Phonebook/>
-    </div>
+    </Wrapper>
   );
 };

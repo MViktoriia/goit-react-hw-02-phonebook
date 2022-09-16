@@ -1,5 +1,6 @@
 import { nanoid } from "nanoid";
 import { Component } from "react";
+import { StyledPhonebook } from './Phonebook.styled';
 import ContactForm from "./ContactForm";
 import ContactList from "./ContactList";
 import Filter from "./Filter";
@@ -67,13 +68,13 @@ class Phonebook extends Component {
 
 
         return (
-            <div>
+            <StyledPhonebook>
                 <h1>Phonebook</h1>
                 <ContactForm onSubmit={this.addContact} />
                 <h2>Contacts</h2>
-                <Filter contactName={filter} onFilterChange={this.changeFilter} />
-                {contactsList.length !== 0 && <ContactList contacts={filteredContacts} removeContact = {this.removeContact} />}
-            </div>
+                
+                {contactsList.length !== 0 ? <div><Filter contactName={filter} onFilterChange={this.changeFilter} /> <ContactList contacts={filteredContacts} removeContact={this.removeContact} /> </div> : "There are no contacts in your Phonebook. Please add contact."}
+            </StyledPhonebook>
         )
     }
 };

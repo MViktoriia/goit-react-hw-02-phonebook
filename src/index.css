@@ -7,7 +7,10 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-}
+  background: url(https://img.freepik.com/free-vector/wave-background-gradient-colorful-modern_343694-1611.jpg?w=1060&t=st=1663362423~exp=1663363023~hmac=498bec6e1c40df6cffb25a17f59136a3255d42b5d45a8476daead4839bfacd6e);
+  background-repeat: no-repeat;
+  background-size: cover;
+};
 
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',

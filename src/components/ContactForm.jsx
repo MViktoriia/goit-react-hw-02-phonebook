@@ -1,6 +1,6 @@
 import { Component } from "react";
 import { nanoid } from 'nanoid';
-import { StyledForm, StyledLabel, StyledInput } from './ContactForm.styled';
+import { StyledForm, StyledLabel, StyledInput, StyledButton } from './ContactForm.styled';
 import PropTypes from 'prop-types';
 
 class ContactForm extends Component {
@@ -52,7 +52,7 @@ class ContactForm extends Component {
                         required
                         />
                 </StyledLabel>
-                <button type="submit">Add contact</button>
+                <StyledButton type="submit">Add contact</StyledButton>
             </StyledForm>
         )
     }    
