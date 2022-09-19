@@ -1,4 +1,4 @@
-import Phonebook from './Phonebook'; 
+import { Phonebook } from '../Phonebook'; 
 import { Wrapper } from './App.styled';
 
 export const App = () => {

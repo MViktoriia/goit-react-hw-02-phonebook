@@ -1,9 +1,9 @@
 import { nanoid } from "nanoid";
 import { Component } from "react";
 import { StyledPhonebook } from './Phonebook.styled';
-import ContactForm from "./ContactForm";
-import ContactList from "./ContactList";
-import Filter from "./Filter";
+import ContactForm from "./ContactForm/ContactForm";
+import ContactList from "./ContactList/ContactList";
+import Filter from "./Filter/Filter";
 
 const INITIAL_STATE = {
     contacts: [
@@ -15,7 +15,7 @@ const INITIAL_STATE = {
     filter: '',
 }
 
-class Phonebook extends Component {
+export class Phonebook extends Component {
     state = {
         ...INITIAL_STATE
     };
@@ -78,5 +78,3 @@ class Phonebook extends Component {
         )
     }
 };
-
-export default Phonebook;
